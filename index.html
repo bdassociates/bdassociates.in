@@ -1,94 +1,521 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>BD Associates | Chartered Accountants</title>
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>B &amp; D Associates | Tax Consultants &amp; Financial Advisors | Bhayander East</title>
+<meta name="description" content="B & D Associates, Bhayander (East), Thane – Tax Consultants and Financial Advisors. Income Tax, GST, TDS, accounting, company and LLP compliance, notices and business advisory.">
+<meta name="keywords" content="tax consultant Bhayander, GST consultant Bhayander East, income tax return filing Thane, accounting services Mira Bhayander, B & D Associates">
+<link rel="canonical" href="https://bdassociates.in/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:title" content="B & D Associates – Tax Consultants & Financial Advisors">
+<meta property="og:description" content="Income Tax, GST, TDS, accounting and compliance services – Bhayander (East), Thane.">
+<meta property="og:url" content="https://bdassociates.in/">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "B & D Associates",
+  "description": "Tax Consultants and Financial Advisors",
+  "url": "https://bdassociates.in/",
+  "email": "bdassociates178@gmail.com",
+  "telephone": ["+91-9867931409", "+91-9967294381"],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Office No. 108, B Wing, Sujata Shopping Center, E Bldg., Navghar Road, Bhayander (East)",
+    "addressLocality": "Thane",
+    "addressRegion": "Maharashtra",
+    "postalCode": "401105",
+    "addressCountry": "IN"
+  },
+  "founder": [{"@type": "Person", "name": "Abhishek Doshi"}, {"@type": "Person", "name": "Bharat S. Bagrecha"}]
+}
+</script>
 <style>
-
-body{
-font-family:Arial, sans-serif;
-margin:0;
-padding:0;
-line-height:1.6;
+:root{
+  --navy:#0d2340; --navy-2:#16345c; --maroon:#8b1e2d; --maroon-2:#a52a3c;
+  --ink:#1f2933; --muted:#5b6673; --line:#e3e7ec; --bg-soft:#f5f7fa; --white:#fff;
+  --radius:10px; --wrap:1160px;
 }
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Source Sans 3",Segoe UI,Arial,sans-serif;color:var(--ink);line-height:1.65;font-size:17px;background:#fff}
+a{color:var(--maroon);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 22px}
+h1,h2,h3{font-family:"Playfair Display",Georgia,serif;color:var(--navy);line-height:1.25}
+section{padding:78px 0;scroll-margin-top:80px}
+.eyebrow{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--maroon);margin-bottom:10px}
+.sec-title{font-size:clamp(28px,3.4vw,38px);margin-bottom:14px}
+.sec-lead{color:var(--muted);max-width:720px;margin-bottom:40px}
+.rule{width:64px;height:3px;background:var(--maroon);margin:14px 0 22px}
+.center{text-align:center}.center .rule,.center .sec-lead{margin-left:auto;margin-right:auto}
 
-header{
-background:#003366;
-color:white;
-padding:40px;
-text-align:center;
+/* Top bar */
+.topbar{background:var(--navy);color:#cfd8e3;font-size:14px}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-top:7px;padding-bottom:7px;flex-wrap:wrap}
+.topbar a{color:#fff}
+.topbar span+span{margin-left:18px}
+
+/* Header */
+header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line);transition:box-shadow .2s}
+header.scrolled{box-shadow:0 4px 18px rgba(13,35,64,.08)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:78px}
+.brand{display:flex;align-items:center;gap:12px;color:var(--navy)}
+.brand:hover{text-decoration:none}
+.mark{width:46px;height:46px;border-radius:8px;background:var(--navy);color:#fff;display:grid;place-items:center;font-family:"Playfair Display",serif;font-weight:700;font-size:17px;border-bottom:3px solid var(--maroon)}
+.brand-name{font-family:"Playfair Display",serif;font-weight:700;font-size:22px;line-height:1.1}
+.brand-sub{display:block;font-family:"Source Sans 3",sans-serif;font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-top:3px}
+nav ul{list-style:none;display:flex;gap:4px}
+nav a{display:block;padding:10px 14px;color:var(--navy);font-weight:600;font-size:15.5px;border-radius:6px}
+nav a:hover,nav a.active{color:var(--maroon);text-decoration:none;background:var(--bg-soft)}
+.menu-btn{display:none;background:none;border:1px solid var(--line);border-radius:6px;padding:8px 11px;cursor:pointer;font-size:20px;color:var(--navy)}
+
+/* Hero */
+.hero{background:linear-gradient(120deg,var(--navy) 0%,var(--navy-2) 62%,#244a7a 100%);color:#fff;padding:96px 0 88px;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;right:-120px;top:-120px;width:460px;height:460px;border-radius:50%;border:60px solid rgba(255,255,255,.04)}
+.hero h1{color:#fff;font-size:clamp(38px,6vw,64px);margin-bottom:8px}
+.hero .sub{font-family:"Playfair Display",serif;font-size:clamp(20px,2.6vw,28px);color:#f3d9dd;margin-bottom:22px}
+.hero p{max-width:640px;color:#dce4ee;font-size:18.5px;margin-bottom:32px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;border-radius:6px;font-weight:700;font-size:16px;border:2px solid transparent;cursor:pointer;font-family:inherit}
+.btn:hover{text-decoration:none}
+.btn-primary{background:var(--maroon);color:#fff}.btn-primary:hover{background:var(--maroon-2)}
+.btn-ghost{border-color:rgba(255,255,255,.55);color:#fff}.btn-ghost:hover{background:rgba(255,255,255,.08)}
+.btn-row{display:flex;gap:14px;flex-wrap:wrap}
+.hero-tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:40px}
+.hero-tags span{font-size:14px;padding:6px 14px;border:1px solid rgba(255,255,255,.25);border-radius:30px;color:#e8eef5}
+
+/* About */
+.about-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:56px;align-items:start}
+.qa h3{font-size:21px;margin:22px 0 6px}
+.qa h3:first-child{margin-top:0}
+.qa p{color:#3c4752}
+.practice{background:var(--bg-soft);border-left:4px solid var(--maroon);border-radius:var(--radius);padding:30px 32px}
+.practice h3{font-size:22px;margin-bottom:14px}
+.practice ul{list-style:none}
+.practice li{padding:8px 0 8px 28px;position:relative;border-bottom:1px dashed #d6dde5}
+.practice li:last-child{border-bottom:none}
+.practice li:before{content:"";position:absolute;left:4px;top:17px;width:9px;height:9px;background:var(--maroon);transform:rotate(45deg)}
+
+/* Services */
+#services{background:var(--bg-soft)}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.svc{background:#fff;border:1px solid var(--line);border-top:3px solid var(--navy);border-radius:var(--radius);padding:28px 26px;transition:transform .2s,box-shadow .2s,border-color .2s}
+.svc:hover{transform:translateY(-4px);box-shadow:0 12px 28px rgba(13,35,64,.09);border-top-color:var(--maroon)}
+.svc .num{font-family:"Playfair Display",serif;color:var(--maroon);font-size:15px;font-weight:700}
+.svc h3{font-family:"Source Sans 3",sans-serif;font-size:16.5px;letter-spacing:.09em;text-transform:uppercase;margin:6px 0 10px}
+.svc p{color:var(--muted);font-size:16px;margin-bottom:12px}
+.svc ul{list-style:none;font-size:15.5px}
+.svc li{padding:3px 0 3px 18px;position:relative;color:#38434e}
+.svc li:before{content:"›";position:absolute;left:2px;color:var(--maroon);font-weight:700}
+.svc-note{margin-top:26px;font-size:14.5px;color:var(--muted);text-align:center}
+
+/* Process */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;counter-reset:s}
+.step{padding:26px 22px;border:1px solid var(--line);border-radius:var(--radius);position:relative}
+.step:before{counter-increment:s;content:"0" counter(s);font-family:"Playfair Display",serif;font-size:34px;color:#d9dee5;font-weight:700;position:absolute;right:18px;top:12px}
+.step h3{font-size:19px;margin-bottom:8px;padding-right:40px}
+.step p{color:var(--muted);font-size:16px}
+
+/* Team */
+#team{background:var(--bg-soft)}
+.team-grid{display:flex;justify-content:center;gap:70px;flex-wrap:wrap}
+.member{text-align:center;width:240px}
+.avatar{width:170px;height:170px;border-radius:50%;margin:0 auto 18px;background:linear-gradient(140deg,var(--navy),var(--navy-2));color:#fff;display:grid;place-items:center;font-family:"Playfair Display",serif;font-size:50px;font-weight:700;border:5px solid #fff;box-shadow:0 0 0 2px var(--maroon),0 10px 26px rgba(13,35,64,.15)}
+.member h3{font-size:22px}
+.member .role{color:var(--maroon);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:13.5px;margin-top:4px}
+
+/* Resources */
+.res-grid{display:grid;grid-template-columns:1fr 1.35fr;gap:40px;align-items:start}
+.links{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.links h3,.check h3{font-size:21px;padding:20px 24px;border-bottom:1px solid var(--line);background:#fff}
+.links a{display:flex;justify-content:space-between;align-items:center;padding:14px 24px;border-bottom:1px solid var(--line);color:var(--ink);font-weight:600}
+.links a:last-child{border-bottom:none}
+.links a small{display:block;color:var(--muted);font-weight:400;font-size:14px}
+.links a:hover{background:var(--bg-soft);text-decoration:none;color:var(--maroon)}
+.links a .arr{color:var(--maroon);font-size:18px}
+.check{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.tabs{display:flex;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.tab{flex:1;min-width:140px;padding:13px 10px;background:var(--bg-soft);border:none;border-right:1px solid var(--line);font-family:inherit;font-weight:700;font-size:15px;color:var(--navy);cursor:pointer}
+.tab:last-child{border-right:none}
+.tab.on{background:#fff;color:var(--maroon);box-shadow:inset 0 -3px 0 var(--maroon)}
+.panel{display:none;padding:22px 26px}
+.panel.on{display:block}
+.panel ol{padding-left:22px}
+.panel li{padding:4px 0;color:#38434e}
+.panel .tip{margin-top:12px;font-size:14.5px;color:var(--muted)}
+
+/* Contact */
+#contact{background:var(--navy);color:#dce4ee}
+#contact .sec-title,#contact h3{color:#fff}
+#contact .eyebrow{color:#f0b9c1}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.c-item{display:flex;gap:16px;margin-bottom:22px}
+.c-ico{flex:0 0 44px;height:44px;border-radius:50%;background:rgba(255,255,255,.08);display:grid;place-items:center}
+.c-ico svg{width:20px;height:20px;fill:#f0b9c1}
+.c-item h4{color:#fff;font-size:15px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:2px}
+.c-item a{color:#fff}
+.map{margin-top:8px;border-radius:var(--radius);overflow:hidden;border:1px solid rgba(255,255,255,.15)}
+.map iframe{display:block;width:100%;height:260px;border:0}
+form.enq{background:#fff;color:var(--ink);border-radius:var(--radius);padding:30px}
+#contact form.enq h3{color:var(--navy);font-size:23px;margin-bottom:4px}
+form.enq .hint{color:var(--muted);font-size:14.5px;margin-bottom:18px}
+.f-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+label{display:block;font-size:14px;font-weight:700;color:var(--navy);margin:12px 0 5px}
+input,select,textarea{width:100%;padding:11px 13px;border:1px solid #cdd5de;border-radius:6px;font-family:inherit;font-size:16px;color:var(--ink);background:#fff}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--navy-2);border-color:transparent}
+textarea{min-height:96px;resize:vertical}
+.f-btns{display:flex;gap:12px;margin-top:18px;flex-wrap:wrap}
+.btn-wa{background:#1f8a4c;color:#fff}.btn-wa:hover{background:#18763f}
+.btn-mail{background:var(--navy);color:#fff}.btn-mail:hover{background:var(--navy-2)}
+.f-err{color:var(--maroon);font-size:14.5px;margin-top:10px;min-height:20px}
+
+/* Footer */
+footer{background:#081a31;color:#a9b6c6;font-size:15.5px}
+.f-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:36px;padding:56px 22px 36px}
+footer h4{color:#fff;font-size:15px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:14px}
+footer ul{list-style:none}
+footer li{padding:4px 0}
+footer a{color:#cdd6e1}
+footer .brand-name{color:#fff}
+.disclaimer{border-top:1px solid rgba(255,255,255,.08);padding:22px 22px;font-size:13.5px;line-height:1.6;color:#8796a8}
+.copy{border-top:1px solid rgba(255,255,255,.08);padding:16px 22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;font-size:14px}
+
+/* Floating buttons */
+.float-wa{position:fixed;right:20px;bottom:20px;width:56px;height:56px;border-radius:50%;background:#1f8a4c;display:grid;place-items:center;box-shadow:0 8px 20px rgba(0,0,0,.25);z-index:60}
+.float-wa svg{width:30px;height:30px;fill:#fff}
+.to-top{position:fixed;right:28px;bottom:88px;width:40px;height:40px;border-radius:50%;background:var(--navy);color:#fff;border:none;font-size:20px;cursor:pointer;opacity:0;pointer-events:none;transition:opacity .2s;z-index:60}
+.to-top.show{opacity:.9;pointer-events:auto}
+
+/* Responsive */
+@media (max-width:980px){
+  .svc-grid{grid-template-columns:repeat(2,1fr)}
+  .steps{grid-template-columns:repeat(2,1fr)}
+  .about-grid,.res-grid,.contact-grid{grid-template-columns:1fr}
+  .f-grid{grid-template-columns:1fr 1fr}
 }
-
-nav{
-background:#0055aa;
-padding:15px;
-text-align:center;
+@media (max-width:820px){
+  .menu-btn{display:block}
+  nav ul{display:none;position:absolute;top:78px;left:0;right:0;background:#fff;flex-direction:column;padding:8px 16px 16px;border-bottom:1px solid var(--line);box-shadow:0 10px 20px rgba(13,35,64,.08)}
+  nav ul.open{display:flex}
+  nav a{padding:12px 10px;border-bottom:1px solid var(--line);border-radius:0}
 }
-
-nav a{
-color:white;
-text-decoration:none;
-margin:20px;
-font-size:18px;
+@media (max-width:600px){
+  body{font-size:16.5px}
+  section{padding:58px 0}
+  .svc-grid,.steps,.f-grid,.f-row{grid-template-columns:1fr}
+  .topbar .wrap{justify-content:center;text-align:center}
+  .topbar .hide-sm{display:none}
+  .brand-name{font-size:19px}.brand-sub{font-size:11px}
+  .hero{padding:70px 0 64px}
+  .team-grid{gap:40px}
 }
-
-section{
-padding:40px;
-}
-
-footer{
-background:#222;
-color:white;
-padding:20px;
-text-align:center;
-}
-
 </style>
-
 </head>
-
 <body>
 
-<header>
-<h1>BD Associates</h1>
-<h3>Chartered Accountants & Corporate Consultants</h3>
+<div class="topbar">
+  <div class="wrap">
+    <div><span>&#9742; <a href="tel:+919867931409">+91 98679 31409</a> / <a href="tel:+919967294381">99672 94381</a></span><span class="hide-sm">&#9993; <a href="mailto:bdassociates178@gmail.com">bdassociates178@gmail.com</a></span></div>
+    <div class="hide-sm">Bhayander (East), Thane</div>
+  </div>
+</div>
+
+<header id="hdr">
+  <div class="wrap nav">
+    <a href="#home" class="brand" aria-label="B & D Associates – Home">
+      <div class="mark">B&amp;D</div>
+      <div><span class="brand-name">B &amp; D Associates</span><span class="brand-sub">Tax Consultants &amp; Financial Advisors</span></div>
+    </a>
+    <nav aria-label="Main">
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+      <ul id="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#resources">Resources</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
-<nav>
-<a href="#">Home</a>
-<a href="#">About</a>
-<a href="#">Services</a>
-<a href="#">Contact</a>
-</nav>
-
-<section>
-
-<h2>Welcome to BD Associates</h2>
-
-<p>
-BD Associates provides professional services in the field of
-GST, Income Tax, Audit, ROC Compliance, Company Law,
-LLP Compliance and Business Advisory Services.
-</p>
-
-<h2>Our Services</h2>
-
-<ul>
-<li>GST Registration & Return Filing</li>
-<li>Income Tax Return Filing</li>
-<li>Audit & Assurance Services</li>
-<li>Company & LLP Incorporation</li>
-<li>ROC Annual Compliance</li>
-<li>Business Advisory</li>
-</ul>
-
+<main>
+<section class="hero" id="home">
+  <div class="wrap">
+    <span class="eyebrow" style="color:#f0b9c1">Bhayander (East), Thane</span>
+    <h1>B &amp; D Associates</h1>
+    <div class="sub">Tax Consultants &amp; Financial Advisors</div>
+    <p>Income Tax, GST, TDS, accounting and business compliance for individuals, proprietors, partnership firms, LLPs and companies — handled end to end, on time, with clear communication.</p>
+    <div class="btn-row">
+      <a class="btn btn-primary" href="#contact">Get in Touch</a>
+      <a class="btn btn-ghost" href="#services">Our Services</a>
+    </div>
+    <div class="hero-tags">
+      <span>Income Tax</span><span>GST</span><span>TDS</span><span>Accounting &amp; Tally</span><span>Company &amp; LLP</span><span>Notices &amp; Assessments</span>
+    </div>
+  </div>
 </section>
 
+<section id="about">
+  <div class="wrap about-grid">
+    <div>
+      <span class="eyebrow">About Us</span>
+      <h2 class="sec-title">Tax and compliance, handled properly</h2>
+      <div class="rule"></div>
+      <div class="qa">
+        <h3>Who are we?</h3>
+        <p>B &amp; D Associates is a tax consultancy and financial advisory practice based in Bhayander (East), Thane. We look after the tax, accounting and statutory compliance needs of individuals and businesses, so that our clients can concentrate on running their business.</p>
+        <h3>What do we do?</h3>
+        <p>We prepare and file returns, maintain and reconcile books of account, keep track of statutory due dates, and assist with notices, assessments and registrations under Income Tax, GST and corporate laws.</p>
+        <h3>Whom do we serve?</h3>
+        <p>Salaried individuals, professionals, traders, manufacturers, service providers, partnership firms, LLPs and private limited companies.</p>
+      </div>
+    </div>
+    <aside class="practice">
+      <h3>Areas of Practice</h3>
+      <ul>
+        <li>Income Tax &amp; TDS compliance</li>
+        <li>GST returns, reconciliation &amp; registrations</li>
+        <li>Accounting, bookkeeping &amp; Tally data management</li>
+        <li>Company &amp; LLP incorporation and ROC compliance support</li>
+        <li>Replies to Income Tax and GST notices</li>
+        <li>Business structuring &amp; financial advisory</li>
+        <li>Business registrations and licences</li>
+      </ul>
+    </aside>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow">What We Do</span>
+      <h2 class="sec-title">Our Services</h2>
+      <div class="rule"></div>
+      <p class="sec-lead">A single point of contact for your tax, accounting and compliance requirements.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc"><span class="num">01</span><h3>Income Tax</h3><p>Return filing and tax planning for individuals, HUFs, firms, LLPs and companies.</p>
+        <ul><li>Income tax return preparation &amp; filing</li><li>Tax planning &amp; advance tax computation</li><li>Capital gains computation</li><li>AIS / Form 26AS reconciliation</li></ul></div>
+      <div class="svc"><span class="num">02</span><h3>GST</h3><p>Registration to annual return — complete GST compliance.</p>
+        <ul><li>GST registration &amp; amendments</li><li>GSTR-1, GSTR-3B &amp; annual returns</li><li>GSTR-2B vs books ITC reconciliation</li><li>E-way bill, e-invoice &amp; LUT support</li></ul></div>
+      <div class="svc"><span class="num">03</span><h3>TDS &amp; TCS</h3><p>Deduction, deposit and quarterly reporting.</p>
+        <ul><li>TDS / TCS applicability advice</li><li>Challan payments &amp; quarterly returns</li><li>Form 16 / 16A generation</li><li>Correction statements &amp; defaults</li></ul></div>
+      <div class="svc"><span class="num">04</span><h3>Accounting &amp; Bookkeeping</h3><p>Accurate, up-to-date books in Tally.</p>
+        <ul><li>Bookkeeping &amp; data entry in Tally</li><li>Bank statement processing &amp; reconciliation</li><li>Ledger scrutiny &amp; finalisation of accounts</li><li>Monthly MIS reports</li></ul></div>
+      <div class="svc"><span class="num">05</span><h3>Company &amp; LLP</h3><p>Formation and ongoing MCA compliance support.</p>
+        <ul><li>Company, LLP &amp; OPC incorporation</li><li>Annual ROC filings support</li><li>Event-based forms (directors, auditors, office)</li><li>Closure / strike-off support</li></ul></div>
+      <div class="svc"><span class="num">06</span><h3>Notices &amp; Assessments</h3><p>Timely, well-documented responses to tax authorities.</p>
+        <ul><li>Income Tax notice replies</li><li>GST notices, scrutiny &amp; DRC replies</li><li>Rectification applications</li><li>Appeal documentation support</li></ul></div>
+      <div class="svc"><span class="num">07</span><h3>Audit Support</h3><p>Audit-ready books and schedules for your auditors.</p>
+        <ul><li>Preparation of audit schedules</li><li>GST &amp; TDS reconciliations</li><li>Vouching &amp; documentation support</li><li>Coordination with your auditors</li></ul></div>
+      <div class="svc"><span class="num">08</span><h3>Business &amp; Financial Advisory</h3><p>Practical guidance for growing businesses.</p>
+        <ul><li>Choice of business structure</li><li>Project reports &amp; CMA data for bank loans</li><li>Cash flow &amp; budgeting</li><li>Partnership deed &amp; documentation</li></ul></div>
+      <div class="svc"><span class="num">09</span><h3>Registrations</h3><p>All the registrations a new business needs.</p>
+        <ul><li>PAN, TAN &amp; Udyam (MSME)</li><li>Shop &amp; Establishment</li><li>Professional Tax</li><li>Import Export Code (IEC)</li></ul></div>
+    </div>
+    <p class="svc-note">We do not provide investment advice in securities. Statutory and tax audits are conducted and signed by independent auditors.</p>
+  </div>
+</section>
+
+<section id="process">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow">How We Work</span>
+      <h2 class="sec-title">A simple, structured process</h2>
+      <div class="rule"></div>
+    </div>
+    <div class="steps">
+      <div class="step"><h3>Understand</h3><p>We discuss your requirement and give you a clear list of the documents needed.</p></div>
+      <div class="step"><h3>Prepare</h3><p>Your data is reviewed, reconciled and computed before anything is filed.</p></div>
+      <div class="step"><h3>Review &amp; File</h3><p>You approve the working, and we file on the relevant portal within the due date.</p></div>
+      <div class="step"><h3>Follow Up</h3><p>Acknowledgements are shared, and later notices and due dates are tracked.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="team">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow">Our People</span>
+      <h2 class="sec-title">Founders</h2>
+      <div class="rule"></div>
+    </div>
+    <div class="team-grid">
+      <div class="member"><div class="avatar">AD</div><h3>Abhishek Doshi</h3><div class="role">Founder</div></div>
+      <div class="member"><div class="avatar">BB</div><h3>CA Bharat S. Bagrecha</h3><div class="role">Co-founder</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="resources">
+  <div class="wrap">
+    <span class="eyebrow">Resources</span>
+    <h2 class="sec-title">Useful links &amp; document checklists</h2>
+    <div class="rule"></div>
+    <p class="sec-lead">Quick links to official government portals, and the documents we usually need to get started.</p>
+    <div class="res-grid">
+      <div class="links">
+        <h3>Official Portals</h3>
+        <a href="https://www.incometax.gov.in/" target="_blank" rel="noopener"><span>Income Tax e-Filing<small>incometax.gov.in</small></span><span class="arr">&#8599;</span></a>
+        <a href="https://www.gst.gov.in/" target="_blank" rel="noopener"><span>GST Portal<small>gst.gov.in</small></span><span class="arr">&#8599;</span></a>
+        <a href="https://www.tdscpc.gov.in/" target="_blank" rel="noopener"><span>TRACES (TDS)<small>tdscpc.gov.in</small></span><span class="arr">&#8599;</span></a>
+        <a href="https://www.mca.gov.in/" target="_blank" rel="noopener"><span>Ministry of Corporate Affairs<small>mca.gov.in</small></span><span class="arr">&#8599;</span></a>
+        <a href="https://ewaybillgst.gov.in/" target="_blank" rel="noopener"><span>E-Way Bill System<small>ewaybillgst.gov.in</small></span><span class="arr">&#8599;</span></a>
+        <a href="https://udyamregistration.gov.in/" target="_blank" rel="noopener"><span>Udyam Registration<small>udyamregistration.gov.in</small></span><span class="arr">&#8599;</span></a>
+        <a href="https://mahagst.gov.in/" target="_blank" rel="noopener"><span>Maharashtra GST Department<small>mahagst.gov.in</small></span><span class="arr">&#8599;</span></a>
+      </div>
+      <div class="check">
+        <h3>Documents We Usually Need</h3>
+        <div class="tabs" role="tablist">
+          <button class="tab on" data-p="p1" role="tab">Income Tax Return</button>
+          <button class="tab" data-p="p2" role="tab">GST Registration</button>
+          <button class="tab" data-p="p3" role="tab">Company / LLP</button>
+        </div>
+        <div class="panel on" id="p1"><ol>
+          <li>PAN, Aadhaar and income tax portal login</li>
+          <li>Form 16 (salaried) / Form 16A and other TDS certificates</li>
+          <li>Bank statements and interest certificates for the full year</li>
+          <li>Capital gains statements from brokers / mutual funds; property sale and purchase documents</li>
+          <li>Proofs for deductions claimed (where applicable)</li>
+          <li>Books of account / sales and purchase summary (for business income)</li>
+          <li>Bank account details for refund</li></ol>
+          <p class="tip">We also review your AIS and Form 26AS before filing.</p></div>
+        <div class="panel" id="p2"><ol>
+          <li>PAN of the business / proprietor</li>
+          <li>Aadhaar and photograph of proprietor / partners / directors</li>
+          <li>Proof of place of business — electricity bill plus rent agreement or NOC from owner</li>
+          <li>Cancelled cheque or bank statement</li>
+          <li>Partnership deed / LLP agreement / Certificate of Incorporation (as applicable)</li>
+          <li>Authorisation letter or board resolution for the authorised signatory</li>
+          <li>Mobile number and e-mail ID for OTP verification</li></ol></div>
+        <div class="panel" id="p3"><ol>
+          <li>PAN and Aadhaar of all proposed directors / partners</li>
+          <li>Passport-size photographs</li>
+          <li>Recent bank statement or utility bill as residential address proof</li>
+          <li>Registered office proof — utility bill plus rent agreement or NOC from owner</li>
+          <li>Two or three proposed names, in order of preference</li>
+          <li>Brief description of the proposed business activities</li>
+          <li>Capital / contribution details</li></ol></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <span class="eyebrow">Contact Us</span>
+    <h2 class="sec-title">Get in touch</h2>
+    <div class="rule"></div>
+    <div class="contact-grid">
+      <div>
+        <div class="c-item"><div class="c-ico"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg></div>
+          <div><h4>Office</h4>Office No. 108, B Wing, Sujata Shopping Center,<br>"E" Bldg., Navghar Road, Bhayander (East),<br>Thane – 401105, Maharashtra</div></div>
+        <div class="c-item"><div class="c-ico"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg></div>
+          <div><h4>Phone</h4><a href="tel:+919867931409">+91 98679 31409</a><br><a href="tel:+919967294381">+91 99672 94381</a></div></div>
+        <div class="c-item"><div class="c-ico"><svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5z"/></svg></div>
+          <div><h4>E-mail</h4><a href="mailto:bdassociates178@gmail.com">bdassociates178@gmail.com</a></div></div>
+        <div class="map"><iframe title="B & D Associates office location" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Sujata+Shopping+Center,+Navghar+Road,+Bhayander+East,+Thane+401105&output=embed"></iframe></div>
+      </div>
+      <form class="enq" id="enq" novalidate>
+        <h3>Send an Enquiry</h3>
+        <p class="hint">Fill in the details and send them to us on WhatsApp or by e-mail.</p>
+        <div class="f-row">
+          <div><label for="nm">Name *</label><input id="nm" autocomplete="name" required></div>
+          <div><label for="ph">Mobile *</label><input id="ph" type="tel" autocomplete="tel" inputmode="tel" required></div>
+        </div>
+        <label for="sv">Service required</label>
+        <select id="sv">
+          <option>Income Tax Return</option><option>GST</option><option>TDS / TCS</option>
+          <option>Accounting &amp; Bookkeeping</option><option>Company / LLP</option>
+          <option>Notice / Assessment</option><option>Business Advisory</option><option>Registration</option><option>Other</option>
+        </select>
+        <label for="msg">Message</label>
+        <textarea id="msg" placeholder="Briefly describe your requirement"></textarea>
+        <div class="f-btns">
+          <button type="button" class="btn btn-wa" id="sendWa">Send on WhatsApp</button>
+          <button type="button" class="btn btn-mail" id="sendMail">Send by E-mail</button>
+        </div>
+        <div class="f-err" id="ferr" role="alert"></div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
 <footer>
-
-© 2026 BD Associates. All Rights Reserved.
-
+  <div class="wrap f-grid" style="padding-left:22px;padding-right:22px">
+    <div>
+      <div class="brand-name" style="font-family:'Playfair Display',serif;font-size:22px">B &amp; D Associates</div>
+      <p style="margin-top:8px">Tax Consultants &amp; Financial Advisors<br>Bhayander (East), Thane</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul><li><a href="#home">Home</a></li><li><a href="#about">About Us</a></li><li><a href="#services">Services</a></li><li><a href="#team">Team</a></li><li><a href="#resources">Resources</a></li><li><a href="#contact">Contact Us</a></li></ul>
+    </div>
+    <div>
+      <h4>Services</h4>
+      <ul><li>Income Tax</li><li>GST</li><li>TDS &amp; TCS</li><li>Accounting</li><li>Company &amp; LLP</li></ul>
+    </div>
+    <div>
+      <h4>Reach Us</h4>
+      <p>Office No. 108, B Wing, Sujata Shopping Center, "E" Bldg., Navghar Road, Bhayander (E), Thane – 401105</p>
+      <p style="margin-top:8px"><a href="tel:+919867931409">+91 98679 31409</a><br><a href="tel:+919967294381">+91 99672 94381</a><br><a href="mailto:bdassociates178@gmail.com">bdassociates178@gmail.com</a></p>
+    </div>
+  </div>
+  <div class="wrap disclaimer"><strong>Disclaimer:</strong> The information on this website is for general information only and does not constitute professional, legal or investment advice. Laws, rules and due dates change from time to time; please consult us on your specific facts before acting. B &amp; D Associates does not accept liability for any loss arising from reliance on this website. Links to government portals are provided for convenience only.</div>
+  <div class="wrap copy"><span>&copy; <span id="yr">2026</span> B &amp; D Associates. All rights reserved.</span><span>bdassociates.in</span></div>
 </footer>
 
+<a class="float-wa" href="https://wa.me/919867931409" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32"><path d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.7a10.7 10.7 0 0 1-5.5-1.5l-.4-.2-3.9 1 1-3.8-.2-.4A10.7 10.7 0 1 1 16 26.7zm5.9-8c-.3-.2-1.9-1-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7 0a8.8 8.8 0 0 1-4.4-3.8c-.3-.6.3-.5.9-1.7.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.6 3.6 0 0 0-1.1 2.7 6.3 6.3 0 0 0 1.3 3.3 14.4 14.4 0 0 0 5.5 4.9c2 .9 2.8 1 3.9.8a3.3 3.3 0 0 0 2.1-1.5 2.7 2.7 0 0 0 .2-1.5c-.1-.2-.3-.3-.6-.4z"/></svg>
+</a>
+<button class="to-top" id="toTop" aria-label="Back to top">&#8593;</button>
+
+<script>
+(function(){
+  var yr=document.getElementById('yr'); yr.textContent=new Date().getFullYear();
+  var hdr=document.getElementById('hdr'), top=document.getElementById('toTop');
+  window.addEventListener('scroll',function(){
+    var y=window.scrollY; hdr.classList.toggle('scrolled',y>10); top.classList.toggle('show',y>600);
+  });
+  top.onclick=function(){window.scrollTo({top:0,behavior:'smooth'})};
+  var btn=document.getElementById('menuBtn'), menu=document.getElementById('menu');
+  btn.onclick=function(){var o=menu.classList.toggle('open');btn.setAttribute('aria-expanded',o)};
+  menu.querySelectorAll('a').forEach(function(a){a.onclick=function(){menu.classList.remove('open');btn.setAttribute('aria-expanded',false)}});
+  // active link on scroll
+  var links=[].slice.call(menu.querySelectorAll('a'));
+  var secs=links.map(function(a){return document.querySelector(a.getAttribute('href'))});
+  window.addEventListener('scroll',function(){
+    var pos=window.scrollY+120, cur=0;
+    secs.forEach(function(s,i){if(s && s.offsetTop<=pos)cur=i});
+    links.forEach(function(a,i){a.classList.toggle('active',i===cur)});
+  });
+  // tabs
+  document.querySelectorAll('.tab').forEach(function(t){t.onclick=function(){
+    document.querySelectorAll('.tab').forEach(function(x){x.classList.remove('on')});
+    document.querySelectorAll('.panel').forEach(function(x){x.classList.remove('on')});
+    t.classList.add('on'); document.getElementById(t.dataset.p).classList.add('on');
+  }});
+  // enquiry
+  function build(){
+    var n=document.getElementById('nm').value.trim(), p=document.getElementById('ph').value.trim();
+    var s=document.getElementById('sv').value, m=document.getElementById('msg').value.trim();
+    var err=document.getElementById('ferr');
+    if(!n||!p){err.textContent='Please enter your name and mobile number.';return null}
+    err.textContent='';
+    return 'Enquiry from website (bdassociates.in)\nName: '+n+'\nMobile: '+p+'\nService: '+s+(m?'\nMessage: '+m:'');
+  }
+  document.getElementById('sendWa').onclick=function(){var t=build();if(t)window.open('https://wa.me/919867931409?text='+encodeURIComponent(t),'_blank')};
+  document.getElementById('sendMail').onclick=function(){var t=build();if(t)location.href='mailto:bdassociates178@gmail.com?subject='+encodeURIComponent('Website enquiry – '+document.getElementById('sv').value)+'&body='+encodeURIComponent(t)};
+})();
+</script>
 </body>
 </html>
